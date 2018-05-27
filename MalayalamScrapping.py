@@ -1,17 +1,11 @@
-"""
-
-
-
-
-
-"""
-
 import requests
 import codecs
 import errno
 import os
+
 from bs4 import BeautifulSoup
-import os
+
+
 def mon2dig(month):
 	if month=="January":
 		return "01"
@@ -39,6 +33,7 @@ def mon2dig(month):
 		return "12"
 	else:
 		return "00"
+
 def conv2fname(s):
 	flist=s.split()
 	m=mon2dig(flist[2])
@@ -55,26 +50,18 @@ def getdata(i):
 		soup=BeautifulSoup(resp.text,'html.parser')
 		links =soup.findAll("p",{"class":"text-center"})
 		if len(links) != 1:
-			
-
-
 			txt=soup.findAll("h1")[0].text
 			txt+="\n"+soup.findAll("div",{"class":"myd"})[1].text
 			txt+="\n"+soup.findAll("p",{"class":""})[0].text
-			
-
 			fname, year = conv2fname(soup.findAll("div",{"class":"myd"})[1].text)
-			
-			path= #"/home/abhi/Desktop/ir/project/JB/"+year+"/"
+			path= #Path/to/where/the/files/must/be/stored
 			ext=str(i)
-			filename=path+fname+ext+".utf8"
-			
+			filename=path+fname+ext+".utf8"	
 			f=codecs.open(str(filename),'w','utf-8')
 			f.write("<DOC>\n<DOCNO>"+fname+ext+".utf8</DOCNO>\n<TEXT>\n"+txt+"\n</TEXT>\n</DOC>")
 			f.close()
 	else:
 		print "error"
-for i in xrange(500000,800000):
-	if i%100==0:
-		print i
+		
+for i in xrange(164676,800000):
 	getdata(i)

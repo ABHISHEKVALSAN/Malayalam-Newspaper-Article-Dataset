@@ -1,10 +1,7 @@
 import requests
 import codecs
-import errno
-import os
 
 from bs4 import BeautifulSoup
-
 
 def mon2dig(month):
 	if month=="January":

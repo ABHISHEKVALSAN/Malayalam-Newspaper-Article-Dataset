@@ -58,7 +58,9 @@ def getdata(i):
 			f.write("<DOC>\n<DOCNO>"+fname+ext+".utf8</DOCNO>\n<TEXT>\n"+txt+"\n</TEXT>\n</DOC>")
 			f.close()
 	else:
-		print "error"
-		
-for i in xrange(164676,800000):
-	getdata(i)
+		print("error")
+def main():
+	for i in xrange(164676,800000):
+		getdata(i)
+if __name__=="__main__":
+	main()

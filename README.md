@@ -1,7 +1,11 @@
 # Malayalam-Newspaper-Article-Dataset
-This is a project that does web scraping. The project scraps articles from a malayalam newspaper website to create a corpus. Also a set of queries is created and corresponding ground truth answers is retrieved. This can be used as a dataset that can check new tools like stemmer, stopwords removal, lemmatizers, etc...
+Project does web scraping. It scraps articles from a malayalam newspaper(janmabhumi) website to create a corpus of news articles. Also a set of queries is created and corresponding ground truth answers is retrieved by a combination of bm25 method and tf-idf method. The dataset can be useful for creating tools like stemmer, stopwords removal, lemmatizers, etc...
 
 Project Requires.
 
-1. Python
-2. 
+1. Python and python packages {reuqests,codecs,bs4}
+2. Internet connection
+
+contact me at email given below for assistance.
+
+email : abhiavk@iitk.ac.in

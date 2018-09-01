@@ -1,6 +1,5 @@
-import requests
-import codecs
 
+import requests
 from bs4 import BeautifulSoup
 
 def mon2dig(month):
@@ -54,7 +53,7 @@ def getdata(i):
 			path			= "DataSet/"
 			filename		=fname+str(i)+".utf8"
 			filenameWithPath	=path+filename
-			f=codecs.open(str(filename),'w','utf-8')
+			f=open(str(filenameWithPath),'w+')
 			f.write("<DOC>\n<DOCNO>"+filename+"</DOCNO>\n<TEXT>\n"+txt+"\n</TEXT>\n</DOC>")
 			f.close()
 			print("Writing file "+filename+" to "+path)

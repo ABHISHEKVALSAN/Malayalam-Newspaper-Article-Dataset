@@ -8,7 +8,8 @@ Open a terminal (*Ctrl+Alt+T*) and execute the following commands
 ```bash
 
 git clone https://github.com/ABHISHEKVALSAN/Malayalam-Newspaper-Article-Dataset 
-cd Malayalam-Newspaper-Article-Dataset 
+cd Malayalam-Newspaper-Article-Dataset
+mkdir DataSet 
 pip install -r requirements.txt 
 python3 MalayalamScraping.py 
 ```

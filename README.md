@@ -2,7 +2,7 @@
 Project does web scraping. It scraps articles from a malayalam newspaper(janmabhumi) website to create a corpus of news articles. Also a set of queries is created and corresponding ground truth answers is retrieved by a combination of bm25 method and tf-idf method. The dataset can be useful for creating tools like stemmer, stopwords removal, lemmatizers, etc...
 ## DATASET
 
-Directly download the Datset from [Dropbox].(https://www.dropbox.com/s/s5d1xw20c7rxapy/DataSet.zip?dl=0)
+Directly download the Datset from [Dropbox](https://www.dropbox.com/s/s5d1xw20c7rxapy/DataSet.zip?dl=0)
 
 ## OR
 

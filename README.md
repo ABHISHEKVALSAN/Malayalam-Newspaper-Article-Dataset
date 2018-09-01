@@ -3,9 +3,12 @@ Project does web scraping. It scraps articles from a malayalam newspaper(janmabh
 
 Project Requires.
 
-1. Python and python packages {reuqests,codecs,bs4}
+1. Python and python packages {reuqests,codecs,bs4,...}
 2. Internet connection
+3.
 
 contact me at email given below for assistance.
 
 email : abhiavk@iitk.ac.in
+
+PS: The scrapping is website specific, hence donot work for other newspaper sites.

@@ -47,20 +47,23 @@ def getdata(i):
 		soup=BeautifulSoup(resp.text,'html.parser')
 		links =soup.findAll("p",{"class":"text-center"})
 		if len(links) != 1:
-			txt=soup.findAll("h1")[0].text
-			txt+="\n"+soup.findAll("div",{"class":"myd"})[1].text
-			txt+="\n"+soup.findAll("p",{"class":""})[0].text
-			fname, year = conv2fname(soup.findAll("div",{"class":"myd"})[1].text)
-			path= #Path/to/where/the/files/must/be/stored
-			ext=str(i)
-			filename=path+fname+ext+".utf8"	
+			txt			=soup.findAll("h1")[0].text\
+							+"\n"+soup.findAll("div",{"class":"myd"})[1].text\
+							+"\n"+soup.findAll("p",{"class":""})[0].text
+			fname, year 		= conv2fname(soup.findAll("div",{"class":"myd"})[1].text)
+			path			= "DataSet/"
+			filename		=fname+str(i)+".utf8"
+			filenameWithPath	=path+filename
 			f=codecs.open(str(filename),'w','utf-8')
-			f.write("<DOC>\n<DOCNO>"+fname+ext+".utf8</DOCNO>\n<TEXT>\n"+txt+"\n</TEXT>\n</DOC>")
+			f.write("<DOC>\n<DOCNO>"+filename+"</DOCNO>\n<TEXT>\n"+txt+"\n</TEXT>\n</DOC>")
 			f.close()
+			print("Writing file "+filename+" to "+path)
+		else:
+			print("File missing at "+url)
 	else:
 		print("error")
 def main():
-	for i in xrange(164676,800000):
+	for i in range(164676,800000):
 		getdata(i)
 if __name__=="__main__":
 	main()

@@ -5,13 +5,13 @@ Project does web scraping. It scraps articles from a malayalam newspaper(janmabh
 
 Open a terminal (*Ctrl+Alt+T*) and execute the following commands
 
-'''bash
+```bash
 
-git clone https://github.com/ABHISHEKVALSAN/Malayalam-Newspaper-Article-Dataset
-cd Malayalam-Newspaper-Article-Dataset
-pip install -r requirements.txt
-python3 MalayalamScraping.py
-'''
+git clone https://github.com/ABHISHEKVALSAN/Malayalam-Newspaper-Article-Dataset 
+cd Malayalam-Newspaper-Article-Dataset 
+pip install -r requirements.txt 
+python3 MalayalamScraping.py 
+```
 
 #### PS
 1. After running the last command, you will see files being created in the DataSet directory 

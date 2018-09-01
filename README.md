@@ -5,18 +5,18 @@ Execution:
 
 Open a terminal (Ctrl+Alt+T) and execute the following commands:
 
-$ git clone https://github.com/ABHISHEKVALSAN/Malayalam-Newspaper-Article-Dataset
-$ cd Malayalam-Newspaper-Article-Dataset
-$ pip install -r requirements.txt
-$ python3 MalayalamScraping.py
+$ git clone https://github.com/ABHISHEKVALSAN/Malayalam-Newspaper-Article-Dataset $
+$ cd Malayalam-Newspaper-Article-Dataset $
+$ pip install -r requirements.txt $
+$ python3 MalayalamScraping.py $
 
-PS:
+# PS:
 1. After running the last command, you will see files being created in the DataSet directory 
 2. Lot of urls has files missing... It is usual
 3. The scraping is website specific and hence donot work for other newspaper sites.
 
  
-Project Requirements:
+# Project Requirements:
 1. Python 
 2. Pip installed
 3. Internet connection

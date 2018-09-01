@@ -5,7 +5,8 @@ Project does web scraping. It scraps articles from a malayalam newspaper(janmabh
 
 Open a terminal (*Ctrl+Alt+T*) and execute the following commands
 
-'''
+'''bash
+
 git clone https://github.com/ABHISHEKVALSAN/Malayalam-Newspaper-Article-Dataset
 cd Malayalam-Newspaper-Article-Dataset
 pip install -r requirements.txt

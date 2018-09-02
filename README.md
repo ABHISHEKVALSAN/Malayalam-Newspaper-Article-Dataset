@@ -8,7 +8,7 @@ Directly download the Datset from [Dropbox](https://www.dropbox.com/s/s5d1xw20c7
 
 ### Execution
 
-Open a terminal (*Ctrl+Alt+T*) and execute the following commands
+Open a terminal (*Ctrl+Alt+T*) and execute the given commands
 
 ```bash
 

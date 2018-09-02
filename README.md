@@ -20,7 +20,7 @@ python3 MalayalamScraping.py
 ```
 
 #### PS
- 1. After running the last command, you will see files being created in the DataSet directory 
+ 1. After running the last command, you'll see files being created in the DataSet directory 
  2. Lot of urls have files missing... It is usual
  3. The scraping is website specific and hence donot work for other newspaper sites.
 

@@ -33,3 +33,7 @@ python3 MalayalamScraping.py
 Contact me at email given below for assistance or raise an issue.
 
 Email : abhiavk@iitk.ac.in
+
+## Related Works
+
+A similar repo with Telugu DataSet can be found [here](https://github.com/AnushaMotamarri/Telugu-Newspaper-Article-Dataset).

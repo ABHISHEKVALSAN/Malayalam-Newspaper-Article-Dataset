@@ -3,32 +3,11 @@ import requests
 from bs4 import BeautifulSoup
 
 def mon2dig(month):
-	if month=="January":
-		return "01"
-	elif month=="February":
-		return "02"
-	elif month=="March":
-		return "03"
-	elif month=="April":
-		return "04"
-	elif month=="May":
-		return "05"
-	elif month=="June":
-		return "06"
-	elif month=="July":
-		return "07"
-	elif month=="August":
-		return "08"
-	elif month=="September":
-		return "09"
-	elif month=="October":
-		return "10"
-	elif month=="November":
-		return "11"
-	elif month=="December":
-		return "12"
-	else:
-		return "00"
+	month_dict = {'January': '01', 'February': '02', 'March': '03',
+					'April': '04', 'May': '05', 'June': '06', 'July': '07',
+					'August': '08', 'September': '09', 'October': '10',
+					'November': '11', 'December': '12'}
+	return month_dict.get(month,'00')
 
 def conv2fname(s):
 	flist=s.split()

@@ -1,26 +1,26 @@
-
 import requests
 from bs4 import BeautifulSoup
 import os
 import constants as const
 
-def mon2dig(month):
+def month_to_digit(month):
     month_dict = {  'January': '01', 'February': '02', 'March': '03',
                     'April': '04', 'May': '05', 'June': '06', 'July': '07',
                     'August': '08', 'September': '09', 'October': '10',
                     'November': '11', 'December': '12'}
     return month_dict.get(month,'00')
 
-def conv2fname(s):
+def conv_to_fname(s):
     flist=s.split()
-    m=mon2dig(flist[2])
+    m=month_to_digit(flist[2])
     if int(flist[1])<10:
         filename="1"+flist[3][2:]+m+"0"+flist[1]
     else:
         filename="1"+flist[3][2:]+m+flist[1]
     return filename,flist[3]
 
-def getdata(i):
+def get_data(i):
+
     url = const.URL_PREFIX + str(i)
     resp = requests.get(url)
     if resp.status_code == 200:
@@ -46,7 +46,8 @@ def getdata(i):
     else:
         print("error")
 def main():
-    for i in range(164676,800000):
-        get_data(i)
+    print('This program is obsolete since the website structure has changed')
+    # for i in range(164676,800000):
+    #     get_data(i)
 if __name__=="__main__":
     main()

@@ -7,11 +7,10 @@ Dataset includes news articles from the year 2014 to 2018
 ##Note
 
 This repo is obsolete, and scrapping does not work on the mentioned site.
-Rework required.
 
 ## DATASET
 
-Directly download the complete datset from [Dropbox](https://www.dropbox.com/s/s5d1xw20c7rxapy/DataSet.zip?dl=0)
+Directly download the complete dataset from [Dropbox](https://www.dropbox.com/s/s5d1xw20c7rxapy/DataSet.zip?dl=0)
 
 Email : abhishekvalsan.iitk@gmail.com
 
